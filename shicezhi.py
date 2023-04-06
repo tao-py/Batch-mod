@@ -7,6 +7,9 @@ root.withdraw()
 fname = filedialog.askopenfile()
 print(fname)
 
+#获得选择好的文件夹路径
+# fname = filedialog.askdirectory()
+
 
 '''自定义文件名剪切函数'''
 def flcut (filename):
