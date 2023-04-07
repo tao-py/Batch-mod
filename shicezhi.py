@@ -25,9 +25,9 @@ def odd_omm (sheet):
     for row in sheet.iter_rows(min_row=6, max_row=8, min_col=2, max_col=2):
         for cell in row:
             print(cell.value)
-            if "OMM" == str(cell.value):
-                print("有OMM")
-                return "OMM"
+            if "OOM" == str(cell.value):
+                print("有OOM")
+                return "OOM"
                 break
             elif "ODD" == str(cell.value):
                 print("有ODD")
@@ -77,7 +77,7 @@ for i in range(num_sheets):
         sheet = wb[sheet_names[i]]      # 选择指定的sheet
         if odd_omm(sheet):
             print("yes{}".format(odd_omm(sheet)))
-            if odd_omm(sheet) == "OMM":
+            if odd_omm(sheet) == "OOM":
                 print("yidong")
                 movesheet(sheet, wb)
                 jilu = 1
