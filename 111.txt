@@ -1,20 +1,2 @@
 pyinstaller --D:\pythontao\tkinter\Excel_tihuan.py --icon=D:\jiafei.ico Excel_tihuan.py
 pyinstaller D:\pythontao\tkinter\Excel_tihuan.py -F -w -i D:\jiafei.ico -n Excel替换
-
-
-如果你使用的是Python的打包工具，如PyInstaller或cx_Freeze，可以通过修改生成的可执行文件的图标来修改程序图标。下面是一个简单的例子，演示如何使用PyInstaller来打包一个Python程序，并将程序的图标修改为指定的图标。
-
-首先，需要准备一个.ico格式的图标文件。假设这个图标文件的路径为C:\path\to\my_icon.ico。
-然后，使用PyInstaller将Python程序打包成可执行文件。假设你的Python程序的文件名为my_program.py，你可以使用以下命令来生成可执行文件：
-css
-Copy code
-pyinstaller --onefile my_program.py
-这将生成一个名为my_program.exe的可执行文件，它将包含你的Python程序和所有的依赖项。
-
-使用一个可编辑的图标文件替换可执行文件的默认图标。你可以使用任何支持.ico格式的图标编辑器来编辑图标文件。假设你已经将你的自定义图标保存为C:\path\to\my_icon.ico。接下来，使用以下命令将my_program.exe的图标修改为my_icon.ico：
-css
-Copy code
-pyinstaller --onefile --icon=C:\path\to\my_icon.ico my_program.py
-这将生成一个名为my_program.exe的可执行文件，它将包含你的Python程序和所有的依赖项，并且它的图标将被设置为你指定的图标。
-
-需要注意的是，如果你使用的是其他的Python打包工具，如cx_Freeze，操作步骤和命令可能略有不同。但是，大多数的打包工具都支持通过指定图标文件来修改程序图标。
