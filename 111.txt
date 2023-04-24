@@ -1,2 +1,2 @@
 pyinstaller --D:\pythontao\tkinter\Excel_tihuan.py --icon=D:\jiafei.ico Excel_tihuan.py
-pyinstaller D:\pythontao\tkinter\Excel_tihuan.py -F -w -i D:\jiafei.ico -n Excel替换
+pyinstaller D:\pythontao\Yongli_assist1a\Main1a.py -F -w -i D:\jiafei.ico -n "用例Aide1.0"
